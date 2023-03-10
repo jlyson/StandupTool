@@ -1,0 +1,22 @@
+﻿<Window x:Class="Shell.Views.SplashScreen.SplashScreenView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        prism:ViewModelLocator.AutoWireViewModel="False"
+        WindowStyle="None"
+        WindowStartupLocation="Manual"
+        AllowsTransparency="True"
+        ShowInTaskbar="False"
+        Topmost="True"
+        Background="Transparent"
+        Top="{Binding WindowTop}"
+        Left="{Binding WindowLeft}"
+        Width="{Binding WindowWidth}"
+        Height="{Binding WindowHeight}">
+
+    <Image Source="../../Resources/splashscreen.png"
+           RenderOptions.BitmapScalingMode="HighQuality"/>
+</Window>
